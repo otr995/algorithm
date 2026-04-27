@@ -24,7 +24,7 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 
 | 전체 | 한 번에 푼 문제 | 다시 풀 문제 | 못 푼 문제 |
 |---|---|---|---|
-| 0 | 0 | 0 | 0 |
+| 1 | 0 | 1 | 0 |
 
 ---
 
@@ -36,7 +36,7 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 | dp | 0 |
 | stack-queue | 0 |
 | greedy | 0 |
-| implementation | 0 |
+| implementation | 1 |
 | sort | 0 |
 | graph | 0 |
 
@@ -72,6 +72,7 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 
 | 날짜 | 유형 | 플랫폼 | 문제 | 난이도 | 비고 |
 |---|---|---|---|---|---|
+| 2026-04-27 | implementation | programmers | [충돌위험 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/340211) / [풀이](implementation/충돌위험 찾기.md) | Lv2 | 시뮬레이션 구현 복습 필요 |
 
 
 ---
