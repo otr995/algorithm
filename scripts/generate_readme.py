@@ -68,7 +68,7 @@ def make_problem_link(problem):
     path = problem["file_path"]
 
     if problem["link"]:
-        return f"[{title}]({problem['link']}) / [풀이]({path})"
+        return f"[{title}]({problem['link']}) / [풀이](https://github.com/otr995/algorithm/blob/main/{path})"
 
     return f"[{title}]({path})"
 
