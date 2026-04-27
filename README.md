@@ -72,7 +72,7 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 
 | 날짜 | 유형 | 플랫폼 | 문제 | 난이도 | 비고 |
 |---|---|---|---|---|---|
-| 2026-04-27 | implementation | programmers | [충돌위험 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/340211) / [풀이](https://github.com/otr995/algorithm/blob/main/implementation/충돌위험 찾기.md) | Lv2 | 시뮬레이션 구현 복습 필요 |
+| 2026-04-27 | implementation | programmers | [충돌위험 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/340211) / [충돌위험 찾기.md](implementation/%EC%B6%A9%EB%8F%8C%EC%9C%84%ED%97%98%20%EC%B0%BE%EA%B8%B0.md) | Lv2 | 시뮬레이션 구현 복습 필요 |
 
 
 ---
