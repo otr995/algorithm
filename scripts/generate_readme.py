@@ -1,5 +1,6 @@
 from pathlib import Path
 import re
+import urllib.parse
 
 ROOT = Path(__file__).resolve().parent.parent
 
@@ -66,9 +67,11 @@ def collect_problems():
 def make_problem_link(problem):
     title = problem["title"] or "문제"
     path = problem["file_path"]
+    encoded_path = urllib.parse.quote(path)
+    file_name = path.split("/")[-1]
 
     if problem["link"]:
-        return f"[{title}]({problem['link']}) / [풀이](https://github.com/otr995/algorithm/blob/main/{path})"
+        return f"[{title}]({problem['link']}) / [{file_name}]({encoded_path})"
 
     return f"[{title}]({path})"
 
