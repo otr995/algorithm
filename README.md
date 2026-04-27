@@ -20,23 +20,6 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 
 ---
 
-## 📂 폴더 구조
-
-    algorithm-study/
-    ├─ README.md
-    ├─ template.md
-    ├─ scripts/
-    │  └─ generate_readme.py
-    ├─ bfs-dfs/
-    ├─ dp/
-    ├─ stack-queue/
-    ├─ greedy/
-    ├─ implementation/
-    ├─ sort/
-    └─ graph/
-
----
-
 ## 📊 진행 현황
 
 | 전체 | 한 번에 푼 문제 | 다시 풀 문제 | 못 푼 문제 |
@@ -57,12 +40,31 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 | sort | 0 |
 | graph | 0 |
 
+
+---
+
+## 📂 폴더 구조
+
+    algorithm-study/
+    ├─ README.md
+    ├─ template.md
+    ├─ scripts/
+    │  └─ generate_readme.py
+    ├─ bfs-dfs/
+    ├─ dp/
+    ├─ stack-queue/
+    ├─ greedy/
+    ├─ implementation/
+    ├─ sort/
+    └─ graph/
+
 ---
 
 ## ✅ 한 번에 푼 문제
 
 | 날짜 | 유형 | 플랫폼 | 문제 | 난이도 | 비고 |
 |---|---|---|---|---|---|
+
 
 ---
 
@@ -71,12 +73,14 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 | 날짜 | 유형 | 플랫폼 | 문제 | 난이도 | 비고 |
 |---|---|---|---|---|---|
 
+
 ---
 
 ## ❌ 못 푼 문제
 
 | 날짜 | 유형 | 플랫폼 | 문제 | 난이도 | 비고 |
 |---|---|---|---|---|---|
+
 
 ---
 
@@ -92,7 +96,7 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 
 ## ✍️ 작성 규칙
 
-문제 파일 상단 metadata:
+문제 파일 상단에는 아래 metadata를 작성합니다.
 
     ---
     title: 문제 이름
@@ -109,13 +113,15 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 
 ## 🔄 자동화
 
+문제 풀이 후 아래 명령어로 README를 자동 갱신합니다.
+
     python scripts/generate_readme.py
 
 ---
 
 ## 🚀 진행 방식
 
-1. 문제 풀이 후 template.md 기반으로 md 작성  
-2. 상태(status) 설정  
-3. 스크립트 실행 → README 자동 갱신  
-4. commit & push  
+1. 문제 풀이 후 `template.md` 기반으로 md 작성
+2. 상태(status) 설정
+3. 스크립트 실행 또는 GitHub Actions로 README 자동 갱신
+4. commit & push

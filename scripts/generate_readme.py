@@ -5,12 +5,6 @@ ROOT = Path(__file__).resolve().parent.parent
 
 EXCLUDE_DIRS = {".git", "scripts", "template", ".github"}
 
-STATUS_MAP = {
-    "solved": "✅ 한 번에 푼 문제",
-    "retry": "🔁 다시 풀 문제",
-    "failed": "❌ 못 푼 문제",
-}
-
 TYPE_ORDER = [
     "bfs-dfs",
     "dp",
@@ -54,7 +48,7 @@ def collect_problems():
         if not metadata:
             continue
 
-        problem = {
+        problems.append({
             "title": metadata.get("title", ""),
             "platform": metadata.get("platform", ""),
             "level": metadata.get("level", ""),
@@ -64,9 +58,7 @@ def collect_problems():
             "link": metadata.get("link", ""),
             "reason": metadata.get("reason", ""),
             "file_path": str(relative_path).replace("\\", "/"),
-        }
-
-        problems.append(problem)
+        })
 
     return problems
 
@@ -91,9 +83,6 @@ def make_status_table(problems, status):
             p["title"],
         )
     )
-
-    if not filtered:
-        return "| 날짜 | 유형 | 플랫폼 | 문제 | 난이도 | 비고 |\n|---|---|---|---|---|---|\n"
 
     lines = [
         "| 날짜 | 유형 | 플랫폼 | 문제 | 난이도 | 비고 |",
@@ -135,14 +124,14 @@ def generate_readme(problems):
     retry = len([p for p in problems if p["status"] == "retry"])
     failed = len([p for p in problems if p["status"] == "failed"])
 
-    return f"""# Algorithm Study
+    return f"""# 🧠 Algorithm Study
 
 Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.  
 문제 유형별 접근 방식과 복습이 필요한 문제를 함께 관리합니다.
 
 ---
 
-## 목표
+## 📌 목표
 
 - 알고리즘 유형별 문제 해결 패턴 정리
 - 다시 풀 문제와 못 푼 문제 복습 관리
@@ -151,7 +140,13 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 
 ---
 
-## 진행 현황
+## 🛠 사용 언어
+
+- Java
+
+---
+
+## 📊 진행 현황
 
 | 전체 | 한 번에 푼 문제 | 다시 풀 문제 | 못 푼 문제 |
 |---|---|---|---|
@@ -159,24 +154,100 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 
 ---
 
-## 유형별 풀이 수
+## 📚 유형별 풀이 수
 
 {make_type_summary(problems)}
 
 ---
 
-## 폴더 구조
+## 📂 폴더 구조
 
-```txt
-algorithm-study/
-├─ README.md
-├─ template.md
-├─ scripts/
-│  └─ generate_readme.py
-├─ bfs-dfs/
-├─ dp/
-├─ stack-queue/
-├─ greedy/
-├─ implementation/
-├─ sort/
-└─ graph/
+    algorithm-study/
+    ├─ README.md
+    ├─ template.md
+    ├─ scripts/
+    │  └─ generate_readme.py
+    ├─ bfs-dfs/
+    ├─ dp/
+    ├─ stack-queue/
+    ├─ greedy/
+    ├─ implementation/
+    ├─ sort/
+    └─ graph/
+
+---
+
+## ✅ 한 번에 푼 문제
+
+{make_status_table(problems, "solved")}
+
+---
+
+## 🔁 다시 풀 문제
+
+{make_status_table(problems, "retry")}
+
+---
+
+## ❌ 못 푼 문제
+
+{make_status_table(problems, "failed")}
+
+---
+
+## 🔖 상태 기준
+
+| 상태 | 기준 |
+|---|---|
+| solved | 힌트 없이 해결 + 설명 가능 |
+| retry | 힌트 참고 or 풀이 불안정 |
+| failed | 스스로 해결 못함 |
+
+---
+
+## ✍️ 작성 규칙
+
+문제 파일 상단에는 아래 metadata를 작성합니다.
+
+    ---
+    title: 문제 이름
+    platform: programmers
+    level: Lv2
+    type: bfs-dfs
+    status: solved
+    date: 2026-04-24
+    link: 문제 링크
+    reason:
+    ---
+
+---
+
+## 🔄 자동화
+
+문제 풀이 후 아래 명령어로 README를 자동 갱신합니다.
+
+    python scripts/generate_readme.py
+
+---
+
+## 🚀 진행 방식
+
+1. 문제 풀이 후 `template.md` 기반으로 md 작성
+2. 상태(status) 설정
+3. 스크립트 실행 또는 GitHub Actions로 README 자동 갱신
+4. commit & push
+"""
+
+
+def main():
+    problems = collect_problems()
+    readme = generate_readme(problems)
+
+    readme_path = ROOT / "README.md"
+    readme_path.write_text(readme, encoding="utf-8")
+
+    print(f"README.md 생성 완료: 총 {len(problems)}문제")
+
+
+if __name__ == "__main__":
+    main()
