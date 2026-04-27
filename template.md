@@ -1,12 +1,12 @@
 ---
-title: 문제 이름
-platform: programmers
-level: Lv?
-type: 
-status: solving
+title: 
+platform: 
+level: lv?
+type: bfs-dfs / dp / graph / greedy / implementation / sort / stack-queue
+status: solved / retry / failed
 date: YYYY-MM-DD
 link: 
-reason: 
+reason: 복습해야하는 이유 
 ---
 
 # 문제 이름
@@ -17,7 +17,14 @@ reason:
 > 문제를 처음 보고 떠올린 생각 / 직관
 
 - 
+
+### 착각한 부분
 - 
+
+### 문제점
+- 
+
+### 사고 전환
 - 
 
 ---
@@ -27,12 +34,10 @@ reason:
 ### 시도 1
 
 [code]
-java
-// 틀린 코드
+// 코드
 [/code]
 
 - ❗ 왜 틀렸는지:
-    - 
     - 
 
 ---
@@ -40,11 +45,10 @@ java
 ### 시도 2
 
 [code]
-java
-
+// 코드
 [/code]
 
-- ❗ 실패 이유:
+- ❗ 왜 틀렸는지:
     - 
 
 ---
@@ -76,8 +80,7 @@ java
 ## 💻 5. 최종 코드
 
 [code]
-java
-
+// 코드
 [/code]
 
 ---
@@ -108,23 +111,6 @@ java
 > 복습용 한 줄 요약
 
 - 
-
----
-
-## 🧪 테스트 케이스
-
-- 입력:
-- 출력:
-- 설명:
-
----
-
-## 🚨 실수 체크리스트
-
-- [ ] 인덱스 범위 확인
-- [ ] 시간/좌표 동기화 문제
-- [ ] 중복 방문 처리
-- [ ] 예외 케이스 처리
 
 ---
 
