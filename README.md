@@ -24,7 +24,7 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 
 | 전체 | 한 번에 푼 문제 | 다시 풀 문제 | 못 푼 문제 |
 |---|---|---|---|
-| 2 | 0 | 1 | 1 |
+| 4 | 0 | 1 | 1 |
 
 ---
 
@@ -39,6 +39,7 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 | implementation | 1 |
 | sort | 0 |
 | graph | 0 |
+| bfs-dfs / dp / graph / greedy / implementation / sort / stack-queue | 2 |
 
 
 ---
