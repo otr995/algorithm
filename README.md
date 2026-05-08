@@ -24,7 +24,7 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 
 | 전체 | 한 번에 푼 문제 | 다시 풀 문제 | 못 푼 문제 |
 |---|---|---|---|
-| 4 | 0 | 1 | 1 |
+| 4 | 0 | 2 | 1 |
 
 ---
 
@@ -36,10 +36,10 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 | dp | 0 |
 | stack-queue | 0 |
 | greedy | 0 |
-| implementation | 1 |
+| implementation | 2 |
 | sort | 0 |
 | graph | 0 |
-| bfs-dfs / dp / graph / greedy / implementation / sort / stack-queue | 2 |
+| bfs-dfs / dp / graph / greedy / implementation / sort / stack-queue | 1 |
 
 
 ---
@@ -74,6 +74,7 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 | 날짜 | 유형 | 플랫폼 | 문제 | 난이도 | 비고 |
 |---|---|---|---|---|---|
 | 2026-04-27 | implementation | programmers | [충돌위험 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/340211) / [충돌위험 찾기.md](implementation/%EC%B6%A9%EB%8F%8C%EC%9C%84%ED%97%98%20%EC%B0%BE%EA%B8%B0.md) | Lv2 | 시뮬레이션 구현 복습 필요 |
+| 2026-05-08 | implementation | programmers | [아날로그 시계](https://school.programmers.co.kr/learn/courses/30/lessons/250135) / [아날로그 시계.md](implementation/%EC%95%84%EB%82%A0%EB%A1%9C%EA%B7%B8%20%EC%8B%9C%EA%B3%84.md) | lv2 | 시계 관련 문제 나왔을 때 참고하기 좋을 듯! |
 
 
 ---
