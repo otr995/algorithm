@@ -24,7 +24,7 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 
 | 전체 | 한 번에 푼 문제 | 다시 풀 문제 | 못 푼 문제 |
 |---|---|---|---|
-| 4 | 0 | 2 | 1 |
+| 4 | 0 | 3 | 1 |
 
 ---
 
@@ -36,10 +36,9 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 | dp | 0 |
 | stack-queue | 0 |
 | greedy | 0 |
-| implementation | 2 |
+| implementation | 3 |
 | sort | 0 |
 | graph | 0 |
-| bfs-dfs / dp / graph / greedy / implementation / sort / stack-queue | 1 |
 
 
 ---
@@ -75,6 +74,7 @@ Java 기반 알고리즘 문제 풀이를 기록하는 저장소입니다.
 |---|---|---|---|---|---|
 | 2026-04-27 | implementation | programmers | [충돌위험 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/340211) / [충돌위험 찾기.md](implementation/%EC%B6%A9%EB%8F%8C%EC%9C%84%ED%97%98%20%EC%B0%BE%EA%B8%B0.md) | Lv2 | 시뮬레이션 구현 복습 필요 |
 | 2026-05-08 | implementation | programmers | [아날로그 시계](https://school.programmers.co.kr/learn/courses/30/lessons/250135) / [아날로그 시계.md](implementation/%EC%95%84%EB%82%A0%EB%A1%9C%EA%B7%B8%20%EC%8B%9C%EA%B3%84.md) | lv2 | 시계 관련 문제 나왔을 때 참고하기 좋을 듯! |
+| 2026-05-14 | implementation | programmers | [수식 복원하기](https://school.programmers.co.kr/learn/courses/30/lessons/340210) / [수식 복원하기.md](implementation/%EC%88%98%EC%8B%9D%20%EB%B3%B5%EC%9B%90%ED%95%98%EA%B8%B0.md) | lv3 | 푸는 방법이 잘 보이지 않는 문제, 복잡한 생각을 잘 정리하는 능력을 올려줄 듯 |
 
 
 ---
